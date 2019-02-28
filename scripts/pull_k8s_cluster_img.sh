@@ -38,12 +38,12 @@ docker pull anjia0532/google-containers.coredns:${COREDNS_VERSION}
 
 
 ############### 修改tag
-docker tag anjia0532/google-containers.kube-apiserver-amd64:${K8S_VERSION}  k8s.gcr.io/kube-apiserver-amd64:${K8S_VERSION}
-docker tag anjia0532/google-containers.kube-controller-manager-amd64:${K8S_VERSION}  k8s.gcr.io/kube-controller-manager-amd64:${K8S_VERSION}
-docker tag anjia0532/google-containers.kube-scheduler-amd64:${K8S_VERSION}  k8s.gcr.io/kube-scheduler-amd64:${K8S_VERSION}
-docker tag anjia0532/google-containers.kube-proxy-amd64:${K8S_VERSION}   k8s.gcr.io/kube-proxy-amd64:${K8S_VERSION}
+docker tag anjia0532/google-containers.kube-apiserver-amd64:${K8S_VERSION}  k8s.gcr.io/kube-apiserver:${K8S_VERSION}
+docker tag anjia0532/google-containers.kube-controller-manager-amd64:${K8S_VERSION}  k8s.gcr.io/kube-controller-manager:${K8S_VERSION}
+docker tag anjia0532/google-containers.kube-scheduler-amd64:${K8S_VERSION}  k8s.gcr.io/kube-scheduler:${K8S_VERSION}
+docker tag anjia0532/google-containers.kube-proxy-amd64:${K8S_VERSION}   k8s.gcr.io/kube-proxy:${K8S_VERSION}
 docker tag anjia0532/google-containers.pause:${PAUSE_VERSION}   k8s.gcr.io/pause:${PAUSE_VERSION}
-docker tag anjia0532/google-containers.etcd-amd64:${ETCD_VERSION}   k8s.gcr.io/etcd-amd64:${ETCD_VERSION}
+docker tag anjia0532/google-containers.etcd-amd64:${ETCD_VERSION}   k8s.gcr.io/etcd:${ETCD_VERSION}
 docker tag anjia0532/google-containers.coredns:${COREDNS_VERSION}   k8s.gcr.io/coredns:${COREDNS_VERSION}
 
 #docker tag anjia0532/google-containers.defaultbackend:${DEFAULTBACKEND_VERSION}  gcr.io/google_containers/defaultbackend:${DEFAULTBACKEND_VERSION}
@@ -58,12 +58,12 @@ docker tag anjia0532/google-containers.coredns:${COREDNS_VERSION}   k8s.gcr.io/c
 #docker tag anjia0532/fluentd-elasticsearch:${FLUENTD_VERSION}  k8s.gcr.io/fluentd-elasticsearch:${FLUENTD_VERSION}
 
 ############### 删除镜像
-docker rmi anjia0532/google-containers.kube-apiserver-amd64:${K8S_VERSION}
-docker rmi anjia0532/google-containers.kube-controller-manager-amd64:${K8S_VERSION}
-docker rmi anjia0532/google-containers.kube-scheduler-amd64:${K8S_VERSION}
-docker rmi anjia0532/google-containers.kube-proxy-amd64:${K8S_VERSION}
+docker rmi anjia0532/google-containers.kube-apiserver:${K8S_VERSION}
+docker rmi anjia0532/google-containers.kube-controller-manager:${K8S_VERSION}
+docker rmi anjia0532/google-containers.kube-scheduler:${K8S_VERSION}
+docker rmi anjia0532/google-containers.kube-proxy:${K8S_VERSION}
 docker rmi anjia0532/google-containers.pause:${PAUSE_VERSION}
-docker rmi anjia0532/google-containers.etcd-amd64:${ETCD_VERSION}
+docker rmi anjia0532/google-containers.etcd:${ETCD_VERSION}
 docker rmi anjia0532/google-containers.coredns:${COREDNS_VERSION}
 
 #docker rmi anjia0532/google-containers.defaultbackend:${DEFAULTBACKEND_VERSION}
